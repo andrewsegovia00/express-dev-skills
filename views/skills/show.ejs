@@ -1,7 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Document</title>
+</head>
+
 <body>
     <h3>
-        <%= skill.name %>
+        <% console.log(skill.name), `Hi there` %>
+            <%= skill.name %>
     </h3>
-    <h3>Complete: <%= skill.learned ? 'Learned' : 'In Progress' %>
+    <h3>
+        <%= skill.learned ? 'Learned' : 'In Progress' %>
     </h3>
+    <h4><a href="/skills">Go Back</a></h4>
 </body>
