@@ -9,15 +9,12 @@
 </head>
 
 <body>
-    <h3>
-        <% console.log(skill.name), `Hi there` %>
-            <%= skill.name %>
-    </h3>
-    <h3>
-        <%= skill.learned ? 'Learned' : 'In Progress' %>
-    </h3>
-    <form action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete">
+    <form method="POST" action="/skills/create">
+        <label for="addSkill">Add Skill</label>
+        <input type="text" id="addSkill" name="addSkill">
+        <label for="addLearned">Add Skill</label>
+        <input type="checkbox" id="addLearned" name="addLearned">
+        <input type="submit">
     </form>
     <h4><a href="/skills">Go Back</a></h4>
 </body>
